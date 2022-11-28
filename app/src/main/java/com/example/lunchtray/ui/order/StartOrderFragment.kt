@@ -49,11 +49,11 @@ class StartOrderFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.startOrderFragment = this@StartOrderFragment
+        binding.fragmentStartOrder = this@StartOrderFragment
     }
 
     // Navigate to the next screen
-    fun startOrder() {
+    fun goToNextScreen() {
         val action = StartOrderFragmentDirections.actionStartOrderFragmentToEntreeMenuFragment()
         findNavController().navigate(action)
     }

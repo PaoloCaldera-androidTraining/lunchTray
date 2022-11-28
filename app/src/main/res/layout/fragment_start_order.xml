@@ -18,7 +18,7 @@
     <data>
 
         <variable
-            name="startOrderFragment"
+            name="fragmentStartOrder"
             type="com.example.lunchtray.ui.order.StartOrderFragment" />
     </data>
 
@@ -37,7 +37,7 @@
             android:layout_marginStart="@dimen/base_margin"
             android:layout_marginTop="@dimen/base_margin"
             android:layout_marginEnd="@dimen/base_margin"
-            android:onClick="@{() -> startOrderFragment.startOrder()}"
+            android:onClick="@{() -> fragmentStartOrder.goToNextScreen()}"
             android:text="@string/start_order"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
