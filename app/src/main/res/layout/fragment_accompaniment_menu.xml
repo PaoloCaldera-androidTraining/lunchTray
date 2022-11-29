@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:checked='@{viewModel.accompaniment.equals(viewModel.menuItems["bread"])}'
-                    android:onClick='@{() -> viewModel.setAccompaniment(viewModel.menuItems["bread"])}'
+                    android:onClick='@{() -> viewModel.setAccompaniment("bread")}'
                     android:text='@{viewModel.menuItems["bread"].name}'
                     tools:text="Accompaniment 1" />
 
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:checked='@{viewModel.accompaniment.equals(viewModel.menuItems["berries"])}'
-                    android:onClick='@{() -> viewModel.setAccompaniment(viewModel.menuItems["berries"])}'
+                    android:onClick='@{() -> viewModel.setAccompaniment("berries")}'
                     android:text='@{viewModel.menuItems["berries"].name}'
                     tools:text="Accompaniment 2" />
 
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:checked='@{viewModel.accompaniment.equals(viewModel.menuItems["pickles"])}'
-                    android:onClick='@{() -> viewModel.setAccompaniment(viewModel.menuItems["pickles"])}'
+                    android:onClick='@{() -> viewModel.setAccompaniment("pickles")}'
                     android:text='@{viewModel.menuItems["pickles"].name}'
                     tools:text="Accompaniment 3" />
 
