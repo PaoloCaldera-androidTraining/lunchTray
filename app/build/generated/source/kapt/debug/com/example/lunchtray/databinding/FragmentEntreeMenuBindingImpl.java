@@ -194,6 +194,7 @@ public class FragmentEntreeMenuBindingImpl extends FragmentEntreeMenuBinding imp
         boolean viewModelEntreeEqualsViewModelMenuItemsPasta = false;
         boolean viewModelEntreeEqualsViewModelMenuItemsSkillet = false;
         java.lang.String viewModelMenuItemsCauliflowerDescription = null;
+        java.lang.String subtotalAndroidStringSubtotalViewModelSubtotal = null;
         boolean viewModelEntreeEqualsViewModelMenuItemsChili = false;
         java.lang.String viewModelSubtotalGetValue = null;
         java.lang.String viewModelMenuItemsChiliName = null;
@@ -218,6 +219,10 @@ public class FragmentEntreeMenuBindingImpl extends FragmentEntreeMenuBinding imp
                         // read viewModel.subtotal.getValue()
                         viewModelSubtotalGetValue = viewModelSubtotal.getValue();
                     }
+
+
+                    // read @android:string/subtotal
+                    subtotalAndroidStringSubtotalViewModelSubtotal = subtotal.getResources().getString(R.string.subtotal, viewModelSubtotalGetValue);
             }
             if ((dirtyFlags & 0x1aL) != 0) {
 
@@ -331,7 +336,7 @@ public class FragmentEntreeMenuBindingImpl extends FragmentEntreeMenuBinding imp
         if ((dirtyFlags & 0x19L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, viewModelSubtotalGetValue);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, subtotalAndroidStringSubtotalViewModelSubtotal);
         }
     }
     // Listener Stub Implementations
