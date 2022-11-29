@@ -1,4 +1,0 @@
-C:\Android\Projects\lunchTray\app\src\androidTest\java\com\example\lunchtray\OrderFunctionalityTests.kt
-C:\Android\Projects\lunchTray\app\src\androidTest\java\com\example\lunchtray\BaseTest.kt
-C:\Android\Projects\lunchTray\app\src\androidTest\java\com\example\lunchtray\NavigationTests.kt
-C:\Android\Projects\lunchTray\app\src\androidTest\java\com\example\lunchtray\MenuContentTests.kt
